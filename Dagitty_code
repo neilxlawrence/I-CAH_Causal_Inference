@@ -1,2 +1,90 @@
 #Navigate to https://dagitty.net/, launch dagitty within your browser, and copy the following code into the box entitled 'Model code' on the right of the screen. Click 'Update Dag' and you will have an interactive version of the directed acyclic graph outlining the assumptions and relationships between variables within this work. 
 
+dag {
+"Current Height" [adjusted,pos="-1.292,-1.303"]
+"Current age" [adjusted,pos="-1.321,-1.927"]
+"Current aldosterone" [pos="-1.228,0.665"]
+"Current angiotensin" [pos="-1.297,0.677"]
+"Current blood pressure" [outcome,pos="-1.150,-0.655"]
+"Current fludrocortisone dose" [exposure,pos="-1.437,-0.435"]
+"Current hydration status *" [latent,pos="-1.404,0.194"]
+"Current hydrocortisone dose" [adjusted,pos="-1.445,-1.052"]
+"Current potassium" [pos="-1.150,0.932"]
+"Current renin" [pos="-1.348,0.677"]
+"Current sodium" [pos="-1.152,0.579"]
+"Current weight" [adjusted,pos="-1.295,-1.645"]
+"Previous age" [adjusted,pos="-1.744,-1.963"]
+"Previous aldosterone" [pos="-1.636,0.720"]
+"Previous angiotensin" [pos="-1.709,0.724"]
+"Previous blood pressure" [adjusted,pos="-1.603,-0.847"]
+"Previous fludrocortisone dose" [pos="-1.801,-0.234"]
+"Previous height" [pos="-1.723,-1.409"]
+"Previous hydration status *" [latent,pos="-1.752,0.194"]
+"Previous hydrocortisone dose" [pos="-1.826,-1.040"]
+"Previous potassium" [pos="-1.573,0.975"]
+"Previous renin" [pos="-1.797,0.696"]
+"Previous sodium" [pos="-1.574,0.583"]
+"Previous weight" [pos="-1.730,-1.719"]
+sex [adjusted,pos="-1.855,-1.535"]
+"Current Height" -> "Current blood pressure" [pos="-1.210,-1.025"]
+"Current age" -> "Current Height"
+"Current age" -> "Current blood pressure" [pos="-1.184,-1.200"]
+"Current age" -> "Current hydrocortisone dose"
+"Current age" -> "Current weight"
+"Current aldosterone" -> "Current blood pressure"
+"Current aldosterone" -> "Current potassium"
+"Current aldosterone" -> "Current sodium"
+"Current angiotensin" -> "Current aldosterone"
+"Current angiotensin" -> "Current blood pressure"
+"Current fludrocortisone dose" -> "Current blood pressure"
+"Current fludrocortisone dose" -> "Current hydration status *"
+"Current fludrocortisone dose" -> "Current renin"
+"Current hydration status *" -> "Current blood pressure"
+"Current hydration status *" -> "Current sodium"
+"Current hydrocortisone dose" -> "Current blood pressure"
+"Current renin" -> "Current angiotensin"
+"Current renin" -> "Current blood pressure"
+"Current sodium" -> "Current blood pressure"
+"Current weight" -> "Current blood pressure" [pos="-1.196,-1.095"]
+"Previous age" -> "Current age"
+"Previous age" -> "Current blood pressure" [pos="-1.227,-0.928"]
+"Previous age" -> "Previous blood pressure"
+"Previous age" -> "Previous height"
+"Previous age" -> "Previous hydrocortisone dose"
+"Previous age" -> "Previous weight"
+"Previous aldosterone" -> "Previous blood pressure"
+"Previous aldosterone" -> "Previous potassium"
+"Previous aldosterone" -> "Previous sodium"
+"Previous angiotensin" -> "Previous aldosterone"
+"Previous angiotensin" -> "Previous blood pressure"
+"Previous blood pressure" -> "Current blood pressure"
+"Previous blood pressure" -> "Current fludrocortisone dose"
+"Previous fludrocortisone dose" -> "Current fludrocortisone dose"
+"Previous fludrocortisone dose" -> "Previous blood pressure"
+"Previous fludrocortisone dose" -> "Previous hydration status *"
+"Previous fludrocortisone dose" -> "Previous renin"
+"Previous height" -> "Current Height"
+"Previous height" -> "Current weight"
+"Previous height" -> "Previous blood pressure"
+"Previous hydration status *" -> "Previous blood pressure"
+"Previous hydration status *" -> "Previous sodium"
+"Previous hydrocortisone dose" -> "Current hydrocortisone dose"
+"Previous renin" -> "Current fludrocortisone dose"
+"Previous renin" -> "Previous angiotensin"
+"Previous renin" -> "Previous blood pressure"
+"Previous sodium" -> "Current fludrocortisone dose"
+"Previous sodium" -> "Previous blood pressure"
+"Previous weight" -> "Current Height"
+"Previous weight" -> "Current weight"
+"Previous weight" -> "Previous blood pressure"
+sex -> "Current Height"
+sex -> "Current blood pressure" [pos="-1.600,-0.967"]
+sex -> "Current hydrocortisone dose" [pos="-1.640,-1.177"]
+sex -> "Current weight"
+sex -> "Previous blood pressure"
+sex -> "Previous fludrocortisone dose"
+sex -> "Previous height"
+sex -> "Previous hydrocortisone dose"
+sex -> "Previous renin"
+sex -> "Previous weight"
+}
